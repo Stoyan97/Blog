@@ -29,24 +29,7 @@ app            = express();
     
     var Blog = mongoose.model("Blog",blogSchema)
     
-    // Blog.create({
-        
-    //     title:"First",
-    //     image: "https://images.unsplash.com/photo-1480444423787-9ea7b1509c54?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5b5d4b1832194f5e9847aaeb247622f5&auto=format&fit=crop&w=500&q=60",
-    //     body: "Test1",
-        
-        
-        
-    // },function(err,newBlog){
-    //     if(err){
-    //         console.log(err)
-    //     }
-        
-    //     else{
-    //         console.log("Created")
-    //     }
-        
-    // })
+    
     
     
     app.get("/",function(req, res) {
