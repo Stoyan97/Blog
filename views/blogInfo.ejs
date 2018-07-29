@@ -1,0 +1,45 @@
+<% include ./partials/header.ejs %>
+
+<h1>More Info</h1>
+<div class = "ui main container segment">
+    <div class = "ui huge header"> <%= blog.title %></div>
+    
+    <div class="ui items">
+  <div class="ui ">
+   
+      <img class="ui centered rounded image" src="<%=blog.image%>">
+   </div>
+    <div class="content">
+      <!--<a class="header"><%=blog.title%></a>-->
+      
+      <div class="meta">
+        <!--<span>Description</span>-->
+        <span><%=blog.created.toDateString() %></span>
+      </div>
+      <div class="description">
+        <p><%- blog.body %></p>
+      </div>
+      <div class="item">
+         <a href = "/blogs/<%=blog._id%>/edit"><button class = "ui green basic button">Edit</button></a>
+
+      <form id="deleteForm" action = "/blogs/<%=blog._id%>?_method=DELETE" method = "POST">
+        <button class = "ui red basic button">Delete</button>
+        
+      </form>
+
+      </div>
+    </div>
+  </div>
+ 
+    
+        
+        
+        
+    </form>
+</div>
+
+
+
+
+
+<% include ./partials/footer.ejs %>

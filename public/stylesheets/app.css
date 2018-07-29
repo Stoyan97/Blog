@@ -1,0 +1,11 @@
+h1{
+    color: green;
+}
+container.main{
+    
+    margin-top: 7.0em;
+}
+
+#deleteForm {
+   display: inline;
+}
